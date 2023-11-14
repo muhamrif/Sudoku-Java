@@ -1,4 +1,6 @@
-package sudoku.sudoku.problemdomain;
+package sudoku.problemdomain;
+
+import java.util.Objects;
 
 public class Coordinates {
     private final int x;
@@ -23,5 +25,10 @@ public class Coordinates {
         if(o==null || getClass()!= o.getClass()) return false;
         Coordinates that = (Coordinates) o;
         return x ==that.x && y==that.y;
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(x,y);
     }
 }

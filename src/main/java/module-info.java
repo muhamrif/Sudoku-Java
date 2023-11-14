@@ -11,6 +11,6 @@ module sudoku.sudoku {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens sudoku.sudoku to javafx.fxml;
-    exports sudoku.sudoku;
+    opens sudoku to javafx.fxml;
+    exports sudoku;
 }
