@@ -18,9 +18,7 @@ import java.util.Collections;
  */
 public class LocalStorageImpl implements IStorage {
 
-    private static File GAME_DATA = new File(
-            System.getProperty("user.home"),
-            "gamedata.txt"
+    private static File GAME_DATA = new File("gamedata.txt"
     );
 
     @Override
