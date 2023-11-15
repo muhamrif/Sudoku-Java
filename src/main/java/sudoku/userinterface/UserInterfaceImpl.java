@@ -183,8 +183,6 @@ public class UserInterfaceImpl implements IUserInterfaceContract.View, EventHand
                         value
                 );
 
-                //If a given tile has a non-zero value and the state of the game is GameState.NEW, then mark
-                //the tile as read only. Otherwise, ensure that it is NOT read only.
                 if (game.getGameState() == GameState.NEW){
                     if (value.equals("")) {
                         tile.setStyle("-fx-opacity: 1;");
